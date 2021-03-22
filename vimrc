@@ -51,7 +51,7 @@ set incsearch
 
 "mapping
 map \zw :ZoomWin<CR>
-map \tr :NERDTree<CR>
+map \tr :NERDTreeToggle<CR>
 map \n \b
 
 "vertical ruller function
