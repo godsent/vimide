@@ -1,2 +1,0 @@
-docker run -it --rm -v ~/work/:/home/mnt/path/lol vim:latest
-docker run --rm -it -v "$PWD:/mnt/$PWD" -w "/mnt/$PWD" vim:latest
