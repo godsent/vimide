@@ -89,6 +89,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'jelera/vim-javascript-syntax'
 Plug 'vim-scripts/ZoomWin'
+Plug 'yuttie/comfortable-motion.vim'
 call plug#end()
 
 let g:syntastic_always_populate_loc_list = 0
@@ -100,3 +101,10 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_ruby_checkers = ['rubocop', 'mri']
 let g:syntastic_javascript_checkers=['eslint']
 let g:syntastic_yaml_checkers=['yamlxs']
+
+let g:comfortable_motion_no_default_key_mappings = 1
+let g:comfortable_motion_scroll_down_key = "j"
+let g:comfortable_motion_scroll_up_key = "k"
+
+nnoremap <silent> <C-j> :call comfortable_motion#flick(70)<CR>
+nnoremap <silent> <C-k> :call comfortable_motion#flick(-70)<CR>
